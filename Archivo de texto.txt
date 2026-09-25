@@ -1,0 +1,238 @@
+1003372@U113942:/$ sudo apt install nvim
+[sudo] contraseña para 1003372:
+1003372 is not in the sudoers file.
+1003372@U113942:/$ ssh keygen -t id_ed25519 -C "uporter001@ikasle.ehu.eus"
+ssh: Could not resolve hostname keygen: Temporary failure in name resolution
+1003372@U113942:/$ sudo apt install ssh
+[sudo] contraseña para 1003372:
+Lo siento, pruebe otra vez.
+[sudo] contraseña para 1003372:
+sudo: 1 intento de contraseña incorrecto
+1003372@U113942:/$ su lsi
+Contraseña:
+lsi@U113942:/$ sudo apt install ssh
+[sudo] contraseña para lsi:
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... Hecho
+Leyendo la información de estado... Hecho
+Se instalarán los siguientes paquetes adicionales:
+  ncurses-term openssh-server openssh-sftp-server ssh-import-id
+Paquetes sugeridos:
+  molly-guard monkeysphere
+Se instalarán los siguientes paquetes NUEVOS:
+  ncurses-term openssh-server openssh-sftp-server ssh ssh-import-id
+0 actualizados, 5 nuevos se instalarán, 0 para eliminar y 30 no actualizados.
+Se necesita descargar 838 kB de archivos.
+Se utilizarán 6.807 kB de espacio de disco adicional después de esta operación.
+¿Desea continuar? [S/n] S
+Des:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssh-sftp-server amd64 1:9.6p1-3ubuntu13.19 [37,1 kB]
+Des:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssh-server amd64 1:9.6p1-3ubuntu13.19 [511 kB]
+Des:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ncurses-term all 6.4+20240113-1ubuntu2.2 [275 kB]
+Des:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ssh all 1:9.6p1-3ubuntu13.19 [4.658 B]
+Des:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ssh-import-id all 5.11-0ubuntu2.24.04.1 [10,1 kB]
+Descargados 838 kB en 1s (853 kB/s)
+Preconfigurando paquetes ...
+Seleccionando el paquete openssh-sftp-server previamente no seleccionado.
+(Leyendo la base de datos ... 280128 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar .../openssh-sftp-server_1%3a9.6p1-3ubuntu13.19_amd64.deb ...
+Desempaquetando openssh-sftp-server (1:9.6p1-3ubuntu13.19) ...
+Seleccionando el paquete openssh-server previamente no seleccionado.
+Preparando para desempaquetar .../openssh-server_1%3a9.6p1-3ubuntu13.19_amd64.deb ...
+Desempaquetando openssh-server (1:9.6p1-3ubuntu13.19) ...
+Seleccionando el paquete ncurses-term previamente no seleccionado.
+Preparando para desempaquetar .../ncurses-term_6.4+20240113-1ubuntu2.2_all.deb ...
+Desempaquetando ncurses-term (6.4+20240113-1ubuntu2.2) ...
+Seleccionando el paquete ssh previamente no seleccionado.
+Preparando para desempaquetar .../ssh_1%3a9.6p1-3ubuntu13.19_all.deb ...
+Desempaquetando ssh (1:9.6p1-3ubuntu13.19) ...
+Seleccionando el paquete ssh-import-id previamente no seleccionado.
+Preparando para desempaquetar .../ssh-import-id_5.11-0ubuntu2.24.04.1_all.deb ...
+Desempaquetando ssh-import-id (5.11-0ubuntu2.24.04.1) ...
+Configurando openssh-sftp-server (1:9.6p1-3ubuntu13.19) ...
+Configurando openssh-server (1:9.6p1-3ubuntu13.19) ...
+
+Fichero de configuración `/etc/pam.d/sshd'
+ ==> Fichero en el sistema creado por usted o por algún script.
+ ==> Fichero también en el paquete.
+   ¿Qué quisiera hacer al respecto?  Sus opciones son:
+    Y o I  : instalar la versión del desarrollador del paquete
+    N o O  : conservar la versión que tiene instalada actualmente
+      D    : mostrar las diferencias entre versiones
+      Z    : ejecutar un intérprete de órdenes para examinar la situación
+ La acción por omisión es conservar la versión actual.
+*** sshd (Y/I/N/O/D/Z) [por omisión=N] ?
+Replacing config file /etc/ssh/sshd_config with new version
+Creating SSH2 RSA key; this may take some time ...
+3072 SHA256:Jb3UXUR3GFSq5fH6VHziCP/umeK0NtAJF9Rb0yXMEzQ root@U113942 (RSA)
+Creating SSH2 ECDSA key; this may take some time ...
+256 SHA256:/oiA4ajT2WJCXF/oQcJtGetXMfvh42IsFHOgOBi9nTU root@U113942 (ECDSA)
+Creating SSH2 ED25519 key; this may take some time ...
+256 SHA256:weGdpgWBbvV3SwdPFK1cb9MlYRuJTzmhiAm+Fw8T7f0 root@U113942 (ED25519)
+Created symlink /etc/systemd/system/sockets.target.wants/ssh.socket → /usr/lib/systemd/system/ssh.socket.
+Created symlink /etc/systemd/system/ssh.service.requires/ssh.socket → /usr/lib/systemd/system/ssh.socket.
+Configurando ssh-import-id (5.11-0ubuntu2.24.04.1) ...
+Configurando ncurses-term (6.4+20240113-1ubuntu2.2) ...
+Configurando ssh (1:9.6p1-3ubuntu13.19) ...
+Procesando disparadores para man-db (2.12.0-4build2) ...
+Procesando disparadores para ufw (0.36.2-6) ...
+lsi@U113942:/$ ssh keygen -t id_ed25519 -C "uporter001@ikasle.ehu.eus"
+ssh: Could not resolve hostname keygen: Temporary failure in name resolution
+lsi@U113942:/$ ssh-keygen -t id_ed25519 -C "uporter001@ikasle.ehu.eus"
+unknown key type id_ed25519
+lsi@U113942:/$ sudo apt install git
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... Hecho
+Leyendo la información de estado... Hecho
+git ya está en su versión más reciente (1:2.43.0-1ubuntu7.3).
+fijado git como instalado manualmente.
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 30 no actualizados.
+lsi@U113942:/$ ssh-keygen -C "uporter001@ikasle.ehu.eus"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/lsi/.ssh/id_ed25519):
+Created directory '/home/lsi/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/lsi/.ssh/id_ed25519
+Your public key has been saved in /home/lsi/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:qgBOs28a7406G9I4ULRBztt7kc858/XUqTWcxLbspTo uporter001@ikasle.ehu.eus
+The key's randomart image is:
++--[ED25519 256]--+
+| .+              |
+| + o             |
+|  =              |
+| . o   .      .  |
+|oo. . o S      + |
+|++o  . = .    =.+|
+|+=o . o *   . .Oo|
+|.o=ooo   + .Eo+.o|
+| +B=..    . .+o. |
++----[SHA256]-----+
+lsi@U113942:/$ ls ~/.sh
+ls: no se puede acceder a '/home/lsi/.sh': No existe el archivo o el directorio
+lsi@U113942:/$ ls ~/.ssh
+id_ed25519  id_ed25519.pub
+lsi@U113942:/$ rm ~/.ssh/*
+lsi@U113942:/$ ls ~/.ssh
+lsi@U113942:/$ su 1003372
+Contraseña:
+su: Fallo de autenticación
+lsi@U113942:/$ su 1003372
+Contraseña:
+su: Fallo de autenticación
+lsi@U113942:/$ su 1003372
+Contraseña:
+1003372@U113942:/$ ssh-keygen -C "uporter001@ikasle.ehu.eus"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/1003372/.ssh/id_ed25519):
+Created directory '/home/1003372/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/1003372/.ssh/id_ed25519
+Your public key has been saved in /home/1003372/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:LpA0ufB3hsFNxBuquuh3B8KBz155wcJolUFIbg8UfDI uporter001@ikasle.ehu.eus
+The key's randomart image is:
++--[ED25519 256]--+
+|  o++oooo        |
+|  oE * oo        |
+|  o+@ +..o       |
+| ..Bo*.=.        |
+|  = *o= S        |
+|   =.* =         |
+|  ..o + .        |
+| ..o . o         |
+|o.o.. .          |
++----[SHA256]-----+
+1003372@U113942:/$ ls ~/.ssh/
+id_ed25519  id_ed25519.pub
+1003372@U113942:/$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM5VxuQXRnjcGwZIve3NJkWf40FbegxRDuiyOXnoWaMB uporter001@ikasle.ehu.eus
+1003372@U113942:/$ ssh uporter001@34.175.97.17
+The authenticity of host '34.175.97.17 (34.175.97.17)' can't be established.
+ED25519 key fingerprint is SHA256:+y8Fncz0hpkrFcsA86VP7AZvCnp/YRm9cVBi5YUXb7M.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '34.175.97.17' (ED25519) to the list of known hosts.
+uporter001@34.175.97.17: Permission denied (publickey).
+1003372@U113942:/$ sudo ssh uporter001@34.175.97.17
+[sudo] contraseña para 1003372:
+1003372 is not in the sudoers file.
+1003372@U113942:/$ su lsi
+Contraseña:
+lsi@U113942:/$ ssh-keygen -C "uporter001@ikasle.ehu.eus"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/lsi/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/lsi/.ssh/id_ed25519
+Your public key has been saved in /home/lsi/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:PIZbNSxbyIZnxEc2UBo6KoDau1ykhN7l4147oNfTiBA uporter001@ikasle.ehu.eus
+The key's randomart image is:
++--[ED25519 256]--+
+|       .++=      |
+|.      =.*..     |
+|o     + O.=      |
+|.+ E . B = .     |
+|o + +.. S        |
+|...*o. + .       |
+| .o.+o=.o        |
+| . +.oo=..       |
+|  o oo .o        |
++----[SHA256]-----+
+lsi@U113942:/$ cat ~/.ssh/id_25519.pub
+cat: /home/lsi/.ssh/id_25519.pub: No existe el archivo o el directorio
+lsi@U113942:/$ ls ~/.ssh
+id_ed25519  id_ed25519.pub
+lsi@U113942:/$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHmcRWDde8amzlm3WGgArjHyEcsjUHUDtyvnHn3iJliz uporter001@ikasle.ehu.eus
+lsi@U113942:/$ ssh uporter001@34.175.97.17
+The authenticity of host '34.175.97.17 (34.175.97.17)' can't be established.
+ED25519 key fingerprint is SHA256:+y8Fncz0hpkrFcsA86VP7AZvCnp/YRm9cVBi5YUXb7M.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '34.175.97.17' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 26.04.1 LTS (GNU/Linux 7.0.0-1011-gcp x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+Expanded Security Maintenance for Applications is not enabled.
+
+15 updates can be applied immediately.
+15 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Last login: Thu Sep 24 14:22:40 2026 from 82.130.128.139
+uporter001@issks-labo-26-27:~$ su bgpegarm
+Password:
+bgpegarm@issks-labo-26-27:/home/uporter001$ touch test.txt
+touch: setting times of 'test.txt': Permission denied
+bgpegarm@issks-labo-26-27:/home/uporter001$ touch bgpegarm/home/test.txt
+touch: setting times of 'bgpegarm/home/test.txt': Permission denied
+bgpegarm@issks-labo-26-27:/home/uporter001$ touch /home/bgpegarm/test.txt
+bgpegarm@issks-labo-26-27:/home/uporter001$ ls /home/bgpegarm
+test.txt
+bgpegarm@issks-labo-26-27:/home/uporter001$ Connection to 34.175.97.17 closed by remote host.
+Connection to 34.175.97.17 closed.
+lsi@U113942:/$ ls ~/.ssh
+id_ed25519  id_ed25519.pub  known_hosts  known_hosts.old
+lsi@U113942:/$ rm ~/.ssh/*
+lsi@U113942:/$ ls ~/.ssh
+lsi@U113942:/$ su 1003372
+Contraseña:
+1003372@U113942:/$ ls ~/.ssh
+id_ed25519  id_ed25519.pub  known_hosts
+1003372@U113942:/$ rm ~/.ssh/*
+1003372@U113942:/$ ls ~/.ssh
+
