@@ -1,1 +1,0 @@
-Haber hau funtzionatzen duen
