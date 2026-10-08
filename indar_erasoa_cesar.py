@@ -1,8 +1,3 @@
-#python3 -m venv venv
-#source venv/bin/activate
-#pip install -r requirements.txt
-#python indar_erasoa_cesar.py
-
 import string
 from langdetect import detect, DetectorFactory
 
